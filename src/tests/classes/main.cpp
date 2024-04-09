@@ -15,7 +15,7 @@ void detection_contactcounting_and_tempo(){
     BallContactCount count;          // Create an object of the BallContactCount class
     count.processBallContact();      // Call processBallContact
 
-    // Declare a variable to hold elapsedtime
+    // Declare a variable to hold elapsed time
     std::chrono::steady_clock::duration elapsedTime;
 
     tempo tempo;                     // Create an object of the tempo class
@@ -30,7 +30,7 @@ int main() {
         return 1;
     }
 
-  // Specify the ALSA PCM device name
+// Specify the ALSA PCM device name
     const char *alsaDevice = "hw:1,0"; // Replace with the appropriate device name
 
     int numDevices = Pa_GetDeviceCount();
@@ -92,6 +92,7 @@ int main() {
 
     // Run ballcontactcount and tempo in a different thread
     std::thread ballcounting(detection_contactcounting_and_tempo);
+    ballcounting.join();
 
     // Stop and close the audio stream
     err = Pa_StopStream(stream);
