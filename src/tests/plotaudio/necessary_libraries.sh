@@ -1,4 +1,4 @@
-#necessary libraries
+#necessary libraries download
 sudo apt update
 sudo apt install libsndfile1-dev
 
