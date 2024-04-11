@@ -1,0 +1,10 @@
+# config
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+
+.src/.vscode/c_cpp_properties.json
+.src/.vscode/launch.json
+.src/.vscode/settings.json
+.src/.vscode/tasks.json
