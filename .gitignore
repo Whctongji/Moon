@@ -8,3 +8,6 @@
 .src/.vscode/launch.json
 .src/.vscode/settings.json
 .src/.vscode/tasks.json
+
+*.json
+*.sh
