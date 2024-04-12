@@ -1,4 +1,0 @@
-# config
-.vscode/*.json
-.src/.vscode/*.json
-src/tests/plotaudio/necessary_libraries.sh
